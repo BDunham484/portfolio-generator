@@ -1,4 +1,31 @@
-const generatePage = (name, github) => {
+
+
+// const generatePage = (name, github) => {
+
+// export const generatePage = (butt, github) => {
+//     return `
+//     <!DOCTYPE html>
+//     <html lang="en">
+//         <head>
+//             <meta charset="UTF-8">
+//             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//             <meta http-eqiv="X=UA-Compatible" content="ie=edge">
+//             <title>Portfolio</title>
+//         </head>
+
+//         <body>
+//             <h1>${butt}</h1>
+//             <h2><a href="https://github.com/${github}">Github</a></h2>
+//         </body>
+//     </html>
+//     `;
+// };
+
+// module.exports = generatePage;
+
+
+
+export const generatePage = (userName, githubName) => {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -10,11 +37,11 @@ const generatePage = (name, github) => {
         </head>
 
         <body>
-            <h1>${name}</h1>
-            <h2><a href="https://github.com/${github}">Github</a></h2>
+            <h1>${userName}</h1>
+            <h2><a href="https://github.com/${githubName}">Github</a></h2>
         </body>
     </html>
     `;
 };
 
-module.exports = generatePage;
+// module.exports = generatePage;
